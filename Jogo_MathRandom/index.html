@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guess the Number</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+
+    <body>
+        <h1 class = "title">Insira um número inteiro e escolha o intervalo: </h1>
+        
+        <div class="container">
+            <!-- <label for="entry-number">Insira um número inteiro:</label> -->
+            <div class="select">
+                <input type="radio" id="intervalo1" name="interval" value="9" checked>
+                <label for="intervalo1">0-9</label>
+                <input type="radio" id="intervalo2" name="interval" value="99">
+                <label for="intervalo2">0-99</label>
+            </div>
+            <input type="number" id = "entry-number" />
+            <button id="button" onclick="guessNumber()">
+                Gerar Número
+            </button>
+        </div>
+        <!-- </div> -->
+        
+        <script src="scripts/runGame.js"></script>
+    </body>
+</html>
